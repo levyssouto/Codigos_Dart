@@ -1,0 +1,40 @@
+/*Escreva um programa que peça ao usuário que insira um número e então exiba todos os
+números de 1 até o número inserido. No final apresente a soma desses números,
+utilizando a estrutura de repetição FOR. */
+import 'dart:io';
+void main(){
+   print("Digite um numero");
+   
+   int num = int.parse(stdin.readLineSync()!);
+   int a=0;
+   for(int i=1;i<=num;i++){
+       a = a+i;
+   }
+   print("resultado: $a");
+}
+
+
+
+
+/*5) Crie um programa que solicite ao usuário que insira um número do tipo inteiro e então
+exiba a multiplicação desses números pelos seus antecessores, utilizando a estrutura de
+repetição While. Exemplo: se foi digitado o número 5, deve ser calculado: 5 x 4 x 3 x 2 x
+1 = 120
+ */
+import 'dart:io';
+void main(){
+   print("Digite um numero");
+   
+   int num = int.parse(stdin.readLineSync()!);
+   int a=1;
+   int cont = num;
+ 
+ while(cont>=1){
+       
+     a = a*cont;
+    --cont; //já inicia com -1
+ }
+ print("resultado é $a");
+ 
+ 
+}
